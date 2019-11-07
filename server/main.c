@@ -11,35 +11,18 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <ncurses.h>
 #include <unistd.h>
 
-#define DELAY 30000
 
 int main(int argc, const char * argv[]) {
 
-	int x = 0, y = 0;
-
-
-	initscr();
-	noecho();
-	curs_set(FALSE); 
-
-
-	while(1) {
-	clear();
-	
+	// set up server socket
+	//
+	// listen for connections
+	//
+	// add connection to client queue
+	//
+	// spawn client handler thread (per X clients)	
   
-  // do something
-  
-	refresh();
-
-	usleep(DELAY);
-	x++;
-
-	}
-
-
-	endwin();
 	return 0;
 }
